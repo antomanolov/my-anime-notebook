@@ -7,13 +7,13 @@
             <div class="game-header">
                 {% if object.profile_picture %}
                     <img class="game-img" src="{{ object.profile_picture }}" alt="profile-image"/>
-                    {% else %} <img class="game-img" src="{% static 'img/profile-picture.png' %}" alt="profile-image"/>
+                {% else %} <img class="game-img" src="{% static 'img/profile-picture.png' %}" alt="profile-image"/>
                 {% endif %}
 
                 <!-- if the user has a profile image -->
 
                 {% if object.get_full_name %}
-                        <h1>{{ object.get_full_name }}</h1>
+                    <h1>{{ object.get_full_name }}</h1>
                 {% endif %}
 
                 <!-- user email -->
@@ -22,12 +22,19 @@
                 <p class="text">Total anime uploaded: {{ object.uploaded_count }}</p>
                 <p class="text">Total screenshots uploaded: {{ object.total_screenshots }}</p>
                 <p class="text">Total anime dowloaded: {{ object.downloaded_count }}</p>
+                {% if is_owned_by %}
+                    <div class="buttons">
+                        <a href="{% url 'profile edit page' pk=object.pk %}" class="button form-button">Edit</a>
+                        <a href="{% url 'profile delete page' pk=object.pk %}" class="button form-button">Delete</a>
+                    </div>
+                {% else %}
+                    <div class="buttons">
+                        <a href="{% url 'profile details page' pk=request.user.pk %}" class="button form-button">Return to your profile page</a>
+                    </div>
 
+                {% endif %}
                 <!-- Edit/Delete buttons -->
-                <div class="buttons">
-                    <a href="{% url 'profile edit page' pk=object.pk%}" class="button form-button">Edit</a>
-                    <a href="{% url 'profile delete page' pk=object.pk %}" class="button form-button">Delete</a>
-                </div>
+
             </div>
         </div>
     </section>
