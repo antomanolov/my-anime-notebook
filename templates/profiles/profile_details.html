@@ -5,8 +5,8 @@
         <h1>Profile Details</h1>
         <div class="info-section">
             <div class="game-header">
-                {% if request.user.profile_picture %}
-                    <img class="game-img" src="{{ request.user.profile_picture }}" alt="profile-image"/>
+                {% if object.profile_picture %}
+                    <img class="game-img" src="{{ object.profile_picture }}" alt="profile-image"/>
                     {% else %} <img class="game-img" src="{% static 'img/profile-picture.png' %}" alt="profile-image"/>
                 {% endif %}
 
