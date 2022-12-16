@@ -83,8 +83,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'myanimetorrentdb',
-        'USER': 'am',
-        'PASSWORD': '227262',
+        'USER': os.environ.get('DD_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
