@@ -1,0 +1,25 @@
+.screenshot__container-main {
+    margin: 5rem auto;
+    width: min(90%, 1140px);
+
+
+}
+.img__container {
+    width: 100%;
+    justify-self: center;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem ;
+}
+
+
+
+.screenshot__container-main a:hover {
+    color: var(--color-warning);
+}
+
+.screenshot__container {
+    border-radius: 0.5rem;
+}

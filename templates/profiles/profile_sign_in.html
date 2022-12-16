@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="create-page" class="auth">
+        <div class="container form__container-main">
+            <div class="form__image-left">
+
+                <form method="post" action="{% url 'sign in page' %}" id="create">
+                    <div class="form-container">
+                        <!-- create game paragraph -->
+                        <h1>LOGIN</h1>
+                        {{ form }}
+                        {% csrf_token %}
+                        <button class="form-button">Sign in</button>
+
+                    </div>
+                </form>
+            </div>
+            <div class="form__image-right">
+                <img src="{% static 'img/ship2.png' %}" alt="background">
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+{% endblock %}

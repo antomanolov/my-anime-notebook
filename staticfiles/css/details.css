@@ -1,0 +1,103 @@
+#game-details {
+    position: relative;
+    display: block;
+    width: 80rem;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+
+}
+
+#game-details>h1 {
+    color: var(--color-warning);
+    font-family: "Agency FB", serif;
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+    background: var(--color-bg2);
+}
+
+.game-header {
+    position: relative;
+    padding: 25px;
+    height: 40%;
+}
+
+
+
+.levels {
+    display: inline-block;
+    margin-top: 15px;
+    color:white;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: var(--color-success);
+
+}
+
+.type {
+    display: inline-block;
+    color: white;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.game-img {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    margin-right: 22px;
+    width: 19rem;
+    /*border-radius: 50%;*/
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.info-section>.text {
+    margin-top: 30px;
+    padding: 60px;
+    height: 50%;
+}
+
+.game-summary {
+    margin-top: 15px;
+    padding: 60px;
+    height: 50%;
+}
+
+.text {
+    font-size: 25px;
+    color: white;
+}
+
+.movie_social {
+    height: 10%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.movie_social {
+    font-size: 1.6rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.buttons {
+    height: 10%;
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+
+

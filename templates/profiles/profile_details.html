@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="game-details">
+        <h1>Profile Details</h1>
+        <div class="info-section">
+            <div class="game-header">
+                {% if request.user.profile_picture %}
+                    <img class="game-img" src="{{ request.user.profile_picture }}" alt="profile-image"/>
+                    {% else %} <img class="game-img" src="{% static 'img/profile-picture.png' %}" alt="profile-image"/>
+                {% endif %}
+
+                <!-- if the user has a profile image -->
+
+                {% if object.get_full_name %}
+                        <h1>{{ object.get_full_name }}</h1>
+                {% endif %}
+
+                <!-- user email -->
+                <p class="text">Email: {{ object.email }}</p>
+                <!-- total number of anime -->
+                <p class="text">Total anime uploaded: {{ object.uploaded_count }}</p>
+                <p class="text">Total screenshots uploaded: {{ object.total_screenshots }}</p>
+                <p class="text">Total anime dowloaded: {{ object.downloaded_count }}</p>
+
+                <!-- Edit/Delete buttons -->
+                <div class="buttons">
+                    <a href="{% url 'profile edit page' pk=object.pk%}" class="button form-button">Edit</a>
+                    <a href="{% url 'profile delete page' pk=object.pk %}" class="button form-button">Delete</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section>
+        <div class="container screenshot__container-main">
+            <article class="anime screenshot__container">
+                <h2><a href="#">@gabriel</a> snipped this screenshot</h2>
+                <div class="img__container">
+                    <img src="{% static 'img/5399-SeriesHeader_Tier02_NGE_2000x800.jpg' %}" alt="">
+                </div>
+                <p> This is some description</p>
+            </article>
+        </div>
+        <div class="container screenshot__container-main">
+            <article class="anime">
+                <h2><a href="#">@gabriel</a> snipped this screenshot</h2>
+                <div class="img__container">
+                    <img src="{% static 'img/anime_cover_3.jpg' %}" alt="">
+                </div>
+                <p> This is some description</p>
+            </article>
+        </div>
+
+    </section>
+
+{% endblock %}

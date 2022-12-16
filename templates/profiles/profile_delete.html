@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section id="create-page" class="auth">
+        <div class="container">
+            <h1>Are you sure you want to delete your profile?</h1>
+
+            <!-- delete profile form -->
+            <form method="post" action="{% url 'profile delete page' pk=object.pk %}" id="delete">
+
+                {{ form }}
+                <button class="form-button">Delete profile</button>
+                {% csrf_token %}
+            </form>
+            <!-- end delete profile form -->
+
+        </div>
+    </section>
+{% endblock %}

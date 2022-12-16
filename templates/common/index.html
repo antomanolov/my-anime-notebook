@@ -1,0 +1,485 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{#  cutted the header out cuz of header image problems if something broke I will return it  #}
+    <header>
+        <div class="container header__container">
+            <div class="header__right">
+                <div class="header__left-img">
+                    <img src="{% static 'img/naruto-throwing-ball-transparent-png-stickpng-3.png' %}" alt="header-img">
+                </div>
+            </div>
+
+            <div class="header__left">
+                <h1>Become a Legend</h1>
+                <p>Upload your anime here</p>
+                <a href="{% url 'anime create page' %}" class="btn btn-primary">Upload</a>
+            </div>
+        </div>
+    </header>
+    {# ANIME CATEGORIES #}
+
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Anime Categories</h1>
+                <p>Something</p>
+                <a href="#" class="btn">Click for more</a>
+            </div>
+
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon"><i class="fa-solid fa-skull"></i></span>
+                    <h5>Horror</h5>
+                    <p>Something about horror</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-solid fa-hat-wizard"></i></span>
+                    <h5>Fantasy</h5>
+                    <p>Something about fantasy</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-sharp fa-solid fa-gun"></i></span>
+                    <h5>Action</h5>
+                    <p>Something about action</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-brands fa-space-awesome"></i></span>
+                    <h5>Sci-fi</h5>
+                    <p>Something about sci-fi</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-solid fa-heart"></i></span>
+                    <h5>Wholesome</h5>
+                    <p>Something about wholesome</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="fa-regular fa-face-laugh-beam"></i></span>
+                    <h5>Comedy</h5>
+                    <p>Something about comedy</p>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    {# END CATEGORIES #}
+
+    {# POPULAR ANIMES #}
+
+    <section class="animes">
+        <h2>Animes of the week</h2>
+        <div class="container anime__container">
+            <article class="anime">
+                <div class="anime__image">
+                    <img src="{% static 'img/anime_cover_1.png' %}" alt="">
+                </div>
+                <div class="anime__info">
+                    <h4>Naruto</h4>
+                    <p>
+                        Naruto is the best anime right now!
+                    </p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </article>
+
+            <article class="anime">
+                <div class="anime__image">
+                    <img src="{% static 'img/anime_cover_2.jpg' %}" alt="">
+                </div>
+                <div class="anime__info">
+                    <h4>Bleach</h4>
+                    <p>
+                        Bleach is awesome too
+                    </p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </article>
+
+            <article class="anime">
+                <div class="anime__image">
+                    <img src="{% static 'img/anime_cover_3.jpg' %}" alt="">
+                </div>
+                <div class="anime__info">
+                    <h4>X/1999</h4>
+                    <p>
+                        X will make you cry! Watch and see.sadasdada
+                    </p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+
+    {# END POPULAR ANIMES #}
+
+    {# FAQ #}
+    <section class="faqs">
+        <h2> Frequently asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Some Question</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor excepturi exercitationem
+                        illo impedit, laboriosam mollitia nemo, neque odit optio perferendis, quaerat quisquam saepe!
+                        Eius
+                        maxime nam quae recusandae sunt.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    {# END OF FAQ #}
+
+    {# Anime Quotest #}
+    <section class="container quotes__container mySwiper">
+        <h2>Anime Lines</h2>
+        <div class="swiper-wrapper">
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_1.png' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Noragami</h5>
+                    <small>adventure anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_1.png' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Noragami</h5>
+                    <small>adventure anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_1.png' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Noragami</h5>
+                    <small>adventure anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_2.jpg' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Naruto</h5>
+                    <small>action anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_4.jpg' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Bleach</h5>
+                    <small>Shinigami anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_4.jpg' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Bleach</h5>
+                    <small>Shinigami anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_4.jpg' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Bleach</h5>
+                    <small>Shinigami anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_4.jpg' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Bleach</h5>
+                    <small>Shinigami anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_4.jpg' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Bleach</h5>
+                    <small>Shinigami anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_4.jpg' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Bleach</h5>
+                    <small>Shinigami anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_4.jpg' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Bleach</h5>
+                    <small>Shinigami anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+
+            <article class="quote swiper-slide">
+                <div class="avatar">
+                    <img src="{% static 'img/avatar_4.jpg' %}" alt="">
+                </div>
+                <div class="quote__info">
+                    <h5>Bleach</h5>
+                    <small>Shinigami anime</small>
+                </div>
+                <div class="quote__body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores at delectus dolor
+                        error eveniet in incidunt laborum libero maiores natus nisi, odio officiis perferendis quia
+                        sapiente
+                        similique tempora velit!
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    {# END ANIME QUOTES#}
+{% endblock %}
