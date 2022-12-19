@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+
+from project_defense.anime.models import AnimeTorrent
+
+
+@admin.register(AnimeTorrent)
+class AppUserAdmin(admin.ModelAdmin):
+    fields = ('name', 'genre')

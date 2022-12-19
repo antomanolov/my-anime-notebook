@@ -9,7 +9,6 @@ def about_page(request):
     return render(request, 'common/about.html')
 
 
-
 def photo_details(request):
     return render(request, 'photo/photo_details.html')
 

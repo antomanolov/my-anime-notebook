@@ -43,6 +43,7 @@ class ProfileDetails(DetailView):
         return context
 
 
+# TODO make this form only for the user id
 class ProfileDelete(DeleteView):
     model = UserModel
     template_name = 'profiles/profile_delete.html'

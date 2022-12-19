@@ -7,3 +7,13 @@
     height: 15rem;
     object-fit: scale-down;
 }
+
+.no__anime > h2 {
+    font-size: 4rem;
+    color: var(--color-warning);
+}
+
+.no__anime {
+    margin-top: 10rem;
+    margin-bottom: 6.5rem;
+}

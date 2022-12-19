@@ -9,7 +9,7 @@
 
 }
 
-#game-details>h1 {
+#game-details > h1 {
     color: var(--color-warning);
     font-family: "Agency FB", serif;
     font-size: 55px;
@@ -36,11 +36,10 @@
 }
 
 
-
 .levels {
     display: inline-block;
     margin-top: 15px;
-    color:white;
+    color: white;
     padding: 7px;
     border-radius: 5px;
     background-color: var(--color-success);
@@ -57,14 +56,15 @@
 .game-img {
     position: relative;
     float: left;
-    margin-left: 15px;
-    margin-right: 22px;
-    width: 19rem;
-    /*border-radius: 50%;*/
-    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+    /*margin-left: 15px;*/
+    /*margin-right: 22px;*/
+    width: 45%;
+    height: 20rem;
+    object-fit: scale-down;
+    /*box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);*/
 }
 
-.info-section>.text {
+.info-section > .text {
     margin-top: 30px;
     padding: 60px;
     height: 50%;
@@ -101,3 +101,6 @@
 }
 
 
+.anime__expand {
+    margin-top: 5rem;
+}

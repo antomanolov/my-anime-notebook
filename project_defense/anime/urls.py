@@ -6,7 +6,7 @@ urlpatterns = (
     path('anime/', anime_page, name='anime page'),
     path('anime/', include(
         [
-            path('details/', anime_details, name='anime details page'),
+            path('details/<int:pk>', anime_details, name='anime details page'),
             path('create/', anime_create, name='anime create page'),
             path('edit/', anime_edit, name='anime edit page'),
             path('delete/', anime_delete, name='anime delete page'),
