@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('project_defense.web.urls')),
     path('', include('project_defense.profileapp.urls')),
+    path('', include('project_defense.anime.urls')),
 ]

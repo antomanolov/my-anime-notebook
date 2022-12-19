@@ -32,6 +32,7 @@ INSTALLED_APPS = [
 
     'project_defense.web',
     'project_defense.profileapp',
+    'project_defense.anime',
 ]
 
 MIDDLEWARE = [
