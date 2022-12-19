@@ -7,3 +7,4 @@ class AnimeCreateForm(forms.ModelForm):
     class Meta:
         model = AnimeTorrent
         exclude = ('date_of_upload', 'date_of_last_download', 'uploader', 'download_count')
+

@@ -38,7 +38,6 @@ class ProfileDetails(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-
         context['is_owned_by'] = self.request.user == self.object
         return context
 

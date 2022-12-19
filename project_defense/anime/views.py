@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 
 from project_defense.anime.forms import AnimeCreateForm
 from project_defense.anime.models import AnimeTorrent
+from project_defense.profileapp.models import AppUser
+from project_defense.profileapp.utilities.user_model_for_app import UserModel
 
 
 def crud_action(request, form_class, instance, redirect_url, primary_url):
